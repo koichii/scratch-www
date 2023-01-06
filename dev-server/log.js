@@ -8,7 +8,8 @@ module.exports = function () {
     
     return function (req, res, next) {
         req.log = logger;
-        req.log.info({req: req});
+        //req.log.info({req: req});
+        console.log(req.url)
         next();
     };
 };
